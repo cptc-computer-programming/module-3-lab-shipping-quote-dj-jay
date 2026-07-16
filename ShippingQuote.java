@@ -1,8 +1,8 @@
 public class ShippingQuote {
     private static final double BASE_COST = 2.0;
 
-    static double calculateTotalCost(double baseCost, double weight, double surfaceArea) {
-        return Math.max(baseCost, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))));
+    static double calculateTotalCost(double weight, double surfaceArea) {
+        return Math.max(BASE_COST, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))));
     }
 
     /// This will calculate the volume based on dimensions
@@ -25,14 +25,12 @@ public class ShippingQuote {
                 return;
             }
         }
+
         double weight = argDoub[0], length = argDoub[1], width = argDoub[2], height = argDoub[3];
-
-        System.out.println("Volume is " + calculateVolume(length, width, height));
-
         double surfaceArea = 2 * (length + width + height);
 
-        System.out.println("Surface Area is " + surfaceArea);
-
-        System.out.println("Total Shipping Cost is " + calculateTotalCost(baseCost, weight, surfaceArea))
+        System.out.printf("Volume is %.2fin³\n", calculateVolume(length, width, height));
+        System.out.printf("Surface Area is %.2fin²\n", surfaceArea);
+        System.out.printf("Total Shipping Cost is $%.2f\n", calculateTotalCost(weight, surfaceArea));
     }
 }

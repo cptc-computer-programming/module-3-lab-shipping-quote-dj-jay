@@ -7,7 +7,7 @@ Write your cost formula (math or pseudocode). It must include:
 - at least one size-based factor
 
 ```java 
-finalCost = Math.max(baseCost, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))))
+finalCost = Math.max(BASE_COST, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))))
 ```
 
 
@@ -28,7 +28,7 @@ For each method, keep it short. Include only:
 
 **Method 1**: calculateTotalCost
 - description: This will calculate and print the total cost of shipping.
-- inputs: baseCost, weight, surfaceArea
+- inputs: weight, surfaceArea
 - output: totalCost
 - return type: double
 
