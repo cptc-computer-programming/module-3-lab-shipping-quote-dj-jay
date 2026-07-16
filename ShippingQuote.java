@@ -2,7 +2,7 @@ public class ShippingQuote {
     private static final double BASE_COST = 2.0;
 
     static double calculateTotalCost(double weight, double surfaceArea) {
-        return weight * Math.max(BASE_COST, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))));
+        return Math.max(BASE_COST, weight * Math.pow(weight, 1.25) / (50000 * (1 / (surfaceArea / 12))));
     }
 
     /// This will calculate the volume based on dimensions

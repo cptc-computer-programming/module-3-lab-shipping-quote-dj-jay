@@ -7,7 +7,7 @@ Write your cost formula (math or pseudocode). It must include:
 - at least one size-based factor
 
 ```java 
-finalCost = weight * Math.max(BASE_COST, Math.pow(weight, 1.5) / (1000 * (1 / (surfaceArea / 12))))
+finalCost = Math.max(BASE_COST, weight * Math.pow(weight, 1.25) / (50000 * (1 / (surfaceArea / 12))))
 ```
 
 
