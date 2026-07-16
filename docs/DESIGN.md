@@ -25,34 +25,15 @@ For each method, keep it short. Include only:
 - output (what it returns)
 - return type
 
-Use at least 5 methods.
 
-**Method 1**:
-- description:
-- inputs:
-- output:
-- return type:
+**Method 1**: calculateTotalCost
+- description: This will calculate and print the total cost of shipping.
+- inputs: baseCost, weight, surfaceArea
+- output: totalCost
+- return type: double
 
-**Method 2**:
-- description:
-- inputs:
-- output:
-- return type:
-
-**Method 3**:
-- description:
-- inputs:
-- output:
-- return type:
-
-**Method 4**:
-- description:
-- inputs:
-- output:
-- return type:
-
-**Method 5**: 
-- description:
-- inputs:
-- output:
-- return type:
+**Method 2**: calculateVolume
+- description: This will calculate the volume.
+- inputs: length, width, height
+- output: packageVolume
+- return type: double
